@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'AR One Sans', sans-serif;
+    background-color: var(--scolor);
+}
+
+:root {
+    --pcolor: #4a1831;
+    --scolor: #ffd7ad;
+}
+
+nav {
+    background-color: var(--pcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--scolor);
+    margin: 20px 30px;
+    font-size: 25px;
+}
+
+.hero-section {
+    background: url(img/hero-section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.logo img {
+    color: var(--scolor);
+}
+
+.content h1 {
+    color: var(--scolor);
+    font-size: 80px;
+}
+
+.content p {
+    color: var(--scolor);
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: var(--scolor);
+    color: var(--pcolor);
+    border: none;
+    font-weight: 900;
+    padding: 10px 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.menu {
+    text-align: center;
+    color: var(--pcolor);
+    padding: 50px 300px;
+}
+
+.menu h2 {
+    font-size: 50px;
+}
+
+.menu p {
+    font-size: 20px;
+}
+
+.btn2 {
+    background-color: var(--pcolor);
+    color: var(--scolor);
+    border: none;
+    font-weight: 900;
+    padding: 10px 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.rectangle-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--pcolor);
+    padding: 50px;
+}
+
+.about-content h2 {
+    font-size: 50px;
+}
+
+.about-content p {
+    font-size: 20px;
+}
+
+.tacos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.tacos-content h1 {
+    font-size: 100px;
+}
+
+.tacos-content h1:nth-child(1) {
+    color: #dc143c;
+}
+
+.tacos-content h1:nth-child(2) {
+    color: #1d0000;
+}
+
+.tacos-content h1:nth-child(3) {
+    color: #40c7e9;
+}
+
+.Offers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--scolor);
+    padding: 50px;
+    background-color: var(--pcolor);
+}
+
+.Offers-content h2 {
+    font-size: 50px;
+}
+
+.Offers-content p {
+    font-size: 20px;
+}
+
+.logo-brand {
+    background-color: #000;
+    position: relative;
+
+}
+
+.logo-brand-inner {
+    background: url(img/main-image.jpg);
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    color: var(--scolor);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.logo-brand-inner img,
+p,
+h2 {
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+
+}
+.subscribe{
+    text-align: center;
+    color: var(--pcolor);
+    padding: 50px 300px;
+}
+
+.subscribe h2 {
+    font-size: 50px;
+}
+
+.subscribe p {
+    font-size: 20px;
+    margin: 20px;
+}
+.search {
+    display: inline-block;
+    position: relative;
+}
+
+.search input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search button[type="submit"] {
+    background-color: var(--pcolor);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .9s ease;
+}
+
+footer {
+    background-color: var(--pcolor);
+    padding: 40px 0;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 200px;
+}
+
+.footer-column h3 {
+    color: var(--scolor);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: var(--scolor);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+   text-decoration: underline;
+}
